@@ -1,0 +1,16 @@
+name = Config
+core = 7.x
+package = OCHA
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = list
+dependencies[] = options
+dependencies[] = paragraphs
+features[features_api][] = api:2
+features[field_base][] = field_funding_charts
+features[field_instance][] = paragraphs_item-funding_charts-field_funding_charts
+features[paragraphs][] = cerf_map
+features[paragraphs][] = funding_charts
+features[paragraphs][] = global_filters
+features[paragraphs][] = kpis
+project path = sites/all/modules/custom
