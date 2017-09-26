@@ -203,6 +203,24 @@ html {
   box-sizing: inherit;
 }
 
+.paragraphs-item-kpis {
+  padding: 50px 0;
+  background: #036cb6;
+}
+.paragraphs-item-kpis ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.paragraphs-item-kpis .value {
+  font-size: xx-large;
+  margin: 5px 0 10px;
+  color: white;
+}
+.paragraphs-item-kpis .label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 html {
   box-sizing: border-box;
 }

@@ -1,6 +1,5 @@
 (function ($) {
 
-  // To understand behaviors, see https://drupal.org/node/756722#behaviors
   Drupal.behaviors.ochaCerfMap = {
     attach: function (context, settings) {
       $('.ocha_cerf_map', context).once('ochaCerfMap', function () {
@@ -14,7 +13,7 @@
         }];
 
         var layout = {
-          title: 'Funding by country (in US$ million)',
+          title: settings.ocha_data[id].title,
           geo: {
             projection: {
               type: 'natural earth'
@@ -23,6 +22,7 @@
           }
         };
 
+        Drupal.behaviors.ochaCharts.add(id);
         Plotly.plot($(this).get(0), data, layout, {showLink: false});
       });
     }
