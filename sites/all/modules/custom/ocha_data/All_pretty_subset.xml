@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<ArrayOfProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3722</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>12-FAO-049</ProjectCode>
+    <ProjectTitle>Emergency assistance to support food insecure  populations affected by climatic shocks in six districts of the southern region of Malawi</ProjectTitle>
+    <ApplicationID>450</ApplicationID>
+    <ApplicationCode>13-RR-MWI-7062</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>56</CountryID>
+    <CountryName>Malawi</CountryName>
+    <CountryCode>MWI</CountryCode>
+    <AgencyID>5</AgencyID>
+    <AgencyName>Food and Agriculture Organization</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>8</EmergencyTypeID>
+    <EmergencyTypeName>Drought</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3722</ProjectID>
+        <ProjectCode>12-FAO-049</ProjectCode>
+        <SectorID>1</SectorID>
+        <SectorName>Agriculture</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Food Security</ClusterName>
+        <IascSectorName>Agriculture</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>0</BeneficiariesFemale>
+    <BeneficiariesMale>0</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>0</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Meteorological, Hydrological and Climatological</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>Eastern Africa</RegionName>
+    <SubRegionName>Eastern Africa</SubRegionName>
+    <ContinentName>Africa</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3166</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>11-WFP-076</ProjectCode>
+    <ProjectTitle>Targeted food assistance to refugees and vulnerable people affected by malnutrition and recurrent food crises (PRRO 200289)</ProjectTitle>
+    <ApplicationID>142</ApplicationID>
+    <ApplicationCode>11-RR-TCD-2386</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>21</CountryID>
+    <CountryName>Chad</CountryName>
+    <CountryCode>TCD</CountryCode>
+    <AgencyID>2</AgencyID>
+    <AgencyName>World Food Programme</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>8</EmergencyTypeID>
+    <EmergencyTypeName>Drought</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3166</ProjectID>
+        <ProjectCode>11-WFP-076</ProjectCode>
+        <SectorID>10</SectorID>
+        <SectorName>Nutrition</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Nutrition</ClusterName>
+        <IascSectorName>Health</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>72945</BeneficiariesFemale>
+    <BeneficiariesMale>72005</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>144950</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Meteorological, Hydrological and Climatological</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>Middle Africa</RegionName>
+    <SubRegionName>Middle Africa</SubRegionName>
+    <ContinentName>Africa</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3157</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>11-WFP-073</ProjectCode>
+    <ProjectTitle>Prise en charge de la malnutrition aigu&#xEB; mod&#xE9;r&#xE9;e chez les groupes vuln&#xE9;rables dans les r&#xE9;gions d&#x2019;urgence nutritionnelle de la Mauritanie</ProjectTitle>
+    <ApplicationID>472</ApplicationID>
+    <ApplicationCode>11-RR-MRT-7391</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>58</CountryID>
+    <CountryName>Mauritania</CountryName>
+    <CountryCode>MRT</CountryCode>
+    <AgencyID>2</AgencyID>
+    <AgencyName>World Food Programme</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>8</EmergencyTypeID>
+    <EmergencyTypeName>Drought</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3157</ProjectID>
+        <ProjectCode>11-WFP-073</ProjectCode>
+        <SectorID>8</SectorID>
+        <SectorName>Food Aid</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Food Security</ClusterName>
+        <IascSectorName>Food</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>41162</BeneficiariesFemale>
+    <BeneficiariesMale>28894</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>108514</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Meteorological, Hydrological and Climatological</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>Western Africa</RegionName>
+    <SubRegionName>Western Africa</SubRegionName>
+    <ContinentName>Africa</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3671</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>12-WFP-075</ProjectCode>
+    <ProjectTitle>Assistance d'urgence aux r&#xE9;fugi&#xE9;s Ghan&#xE9;ens et la populations d'accueil au Nord du Togo</ProjectTitle>
+    <ApplicationID>747</ApplicationID>
+    <ApplicationCode>12-RR-TGO-11824</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>82</CountryID>
+    <CountryName>Togo</CountryName>
+    <CountryCode>TGO</CountryCode>
+    <AgencyID>2</AgencyID>
+    <AgencyName>World Food Programme</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>16</EmergencyTypeID>
+    <EmergencyTypeName>Displacement</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3671</ProjectID>
+        <ProjectCode>12-WFP-075</ProjectCode>
+        <SectorID>10</SectorID>
+        <SectorName>Nutrition</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Nutrition</ClusterName>
+        <IascSectorName>Health</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>0</BeneficiariesFemale>
+    <BeneficiariesMale>0</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>0</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Conflict-related</EmergencyGroupName>
+    <EmergencyCategoryName>Man-made</EmergencyCategoryName>
+    <RegionName>Western Africa</RegionName>
+    <SubRegionName>Western Africa</SubRegionName>
+    <ContinentName>Africa</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3765</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>10-ESC-005</ProjectCode>
+    <ProjectTitle>Creation of cholera resource persons in Haitian medias to disseminate life saving information in the population</ProjectTitle>
+    <ApplicationID>356</ApplicationID>
+    <ApplicationCode>11-RR-HTI-5851</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>41</CountryID>
+    <CountryName>Haiti</CountryName>
+    <CountryCode>HTI</CountryCode>
+    <AgencyID>14</AgencyID>
+    <AgencyName>Educational Scientific and Cultural Organization</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>9</EmergencyTypeID>
+    <EmergencyTypeName>Cholera</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3765</ProjectID>
+        <ProjectCode>10-ESC-005</ProjectCode>
+        <SectorID>9</SectorID>
+        <SectorName>Health</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Health</ClusterName>
+        <IascSectorName>Health</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>0</BeneficiariesFemale>
+    <BeneficiariesMale>0</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>0</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Biological (human disease outbreak and other health emergency)</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>Latin America and the Caribbean</RegionName>
+    <SubRegionName>Caribbean</SubRegionName>
+    <ContinentName>Americas</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3731</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>12-HCR-055</ProjectCode>
+    <ProjectTitle>Ensuring the protection of communities affected and displaced by Typhoon Pablo   PHI-13/P-HR-RL/57124/R</ProjectTitle>
+    <ApplicationID>607</ApplicationID>
+    <ApplicationCode>13-RR-PHL-9816</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>71</CountryID>
+    <CountryName>Philippines</CountryName>
+    <CountryCode>PHL</CountryCode>
+    <AgencyID>11</AgencyID>
+    <AgencyName>United Nations High Commissioner for Refugees</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>6</EmergencyTypeID>
+    <EmergencyTypeName>Flood</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3731</ProjectID>
+        <ProjectCode>12-HCR-055</ProjectCode>
+        <SectorID>14</SectorID>
+        <SectorName>Protection</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Protection</ClusterName>
+        <IascSectorName>Protection/Human Rights/Rule of Law</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>0</BeneficiariesFemale>
+    <BeneficiariesMale>0</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>0</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Meteorological, Hydrological and Climatological</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>South-Eastern Asia</RegionName>
+    <SubRegionName>South-Eastern Asia</SubRegionName>
+    <ContinentName>Asia</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3735</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>12-WHO-086</ProjectCode>
+    <ProjectTitle>Provision of emergency health services to flood affected populations  PHI-13/H/57141/R</ProjectTitle>
+    <ApplicationID>607</ApplicationID>
+    <ApplicationCode>13-RR-PHL-9816</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>71</CountryID>
+    <CountryName>Philippines</CountryName>
+    <CountryCode>PHL</CountryCode>
+    <AgencyID>3</AgencyID>
+    <AgencyName>World Health Organization</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>6</EmergencyTypeID>
+    <EmergencyTypeName>Flood</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3735</ProjectID>
+        <ProjectCode>12-WHO-086</ProjectCode>
+        <SectorID>9</SectorID>
+        <SectorName>Health</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Health</ClusterName>
+        <IascSectorName>Health</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>0</BeneficiariesFemale>
+    <BeneficiariesMale>0</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>0</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Meteorological, Hydrological and Climatological</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>South-Eastern Asia</RegionName>
+    <SubRegionName>South-Eastern Asia</SubRegionName>
+    <ContinentName>Asia</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>3161</ProjectID>
+    <Year>0</Year>
+    <ProjectCode>11-WFP-074</ProjectCode>
+    <ProjectTitle>Emergency Food Assistance to Tropical Storm Washi Affected Populations in Northern Mindanao </ProjectTitle>
+    <ApplicationID>605</ApplicationID>
+    <ApplicationCode>11-RR-PHL-9754</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>71</CountryID>
+    <CountryName>Philippines</CountryName>
+    <CountryCode>PHL</CountryCode>
+    <AgencyID>2</AgencyID>
+    <AgencyName>World Food Programme</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>6</EmergencyTypeID>
+    <EmergencyTypeName>Flood</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>3161</ProjectID>
+        <ProjectCode>11-WFP-074</ProjectCode>
+        <SectorID>8</SectorID>
+        <SectorName>Food Aid</SectorName>
+        <SectorAmount>0.0000</SectorAmount>
+        <ClusterName>Food Security</ClusterName>
+        <IascSectorName>Food</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>0.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>41564</BeneficiariesFemale>
+    <BeneficiariesMale>39934</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>81498</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Approved</ProjectStatus>
+    <ProjectStartDate xsi:nil="true"/>
+    <LetterSentToAgencyDate xsi:nil="true"/>
+    <DateUSGSignature xsi:nil="true"/>
+    <DisbursementDate xsi:nil="true"/>
+    <EmergencyGroupName>Meteorological, Hydrological and Climatological</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>South-Eastern Asia</RegionName>
+    <SubRegionName>South-Eastern Asia</SubRegionName>
+    <ContinentName>Asia</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>320</ProjectID>
+    <Year>2006</Year>
+    <ProjectCode>06-FAO-331</ProjectCode>
+    <ProjectTitle>Emergency Relief Assistance to Victims of Typhoon Durian</ProjectTitle>
+    <ApplicationID>597</ApplicationID>
+    <ApplicationCode>06-RR-PHL-9588</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>71</CountryID>
+    <CountryName>Philippines</CountryName>
+    <CountryCode>PHL</CountryCode>
+    <AgencyID>5</AgencyID>
+    <AgencyName>Food and Agriculture Organization</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>5</EmergencyTypeID>
+    <EmergencyTypeName>Storm (hurricane, cyclone, etc.)</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>320</ProjectID>
+        <ProjectCode>06-FAO-331</ProjectCode>
+        <SectorID>1</SectorID>
+        <SectorName>Agriculture</SectorName>
+        <SectorAmount>100000.0000</SectorAmount>
+        <ClusterName>Food Security</ClusterName>
+        <IascSectorName>Agriculture</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>100000.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>0</BeneficiariesFemale>
+    <BeneficiariesMale>0</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>0</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Funded</ProjectStatus>
+    <ProjectStartDate>2006-12-20T00:00:00</ProjectStartDate>
+    <LetterSentToAgencyDate>2006-12-12T00:00:00</LetterSentToAgencyDate>
+    <DateUSGSignature>2006-12-12T00:00:00</DateUSGSignature>
+    <DisbursementDate>2006-12-20T00:00:00</DisbursementDate>
+    <EmergencyGroupName>Meteorological, Hydrological and Climatological</EmergencyGroupName>
+    <EmergencyCategoryName>Natural Disaster</EmergencyCategoryName>
+    <RegionName>South-Eastern Asia</RegionName>
+    <SubRegionName>South-Eastern Asia</SubRegionName>
+    <ContinentName>Asia</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+  <project>
+    <TableName>M</TableName>
+    <ProjectID>324</ProjectID>
+    <Year>2006</Year>
+    <ProjectCode>06-HCR-335</ProjectCode>
+    <ProjectTitle>Iraq emergency response through protection of and assistance to refugees and IDPs</ProjectTitle>
+    <ApplicationID>373</ApplicationID>
+    <ApplicationCode>06-RR-IRQ-6057</ApplicationCode>
+    <WindowID>3</WindowID>
+    <WindowFullName>Rapid Response</WindowFullName>
+    <CountryID>45</CountryID>
+    <CountryName>Iraq</CountryName>
+    <CountryCode>IRQ</CountryCode>
+    <AgencyID>11</AgencyID>
+    <AgencyName>United Nations High Commissioner for Refugees</AgencyName>
+    <ImplementingAgencyID>0</ImplementingAgencyID>
+    <ImplementingAgencyName/>
+    <EmergencyTypeID>20</EmergencyTypeID>
+    <EmergencyTypeName>Displacement</EmergencyTypeName>
+    <projectsectors>
+      <projectsector>
+        <TableName>M</TableName>
+        <ProjectID>324</ProjectID>
+        <ProjectCode>06-HCR-335</ProjectCode>
+        <SectorID>13</SectorID>
+        <SectorName>Multi-sector </SectorName>
+        <SectorAmount>3998590.0000</SectorAmount>
+        <ClusterName>Multi Sector</ClusterName>
+        <IascSectorName>Multi Sector</IascSectorName>
+      </projectsector>
+    </projectsectors>
+    <TotalAmountApproved>3998590.0000</TotalAmountApproved>
+    <BeneficiariesGirls>0</BeneficiariesGirls>
+    <BeneficiariesBoys>0</BeneficiariesBoys>
+    <BeneficiariesChildren>0</BeneficiariesChildren>
+    <BeneficiariesWomen>0</BeneficiariesWomen>
+    <BeneficiariesMen>0</BeneficiariesMen>
+    <BeneficiariesFemale>0</BeneficiariesFemale>
+    <BeneficiariesMale>0</BeneficiariesMale>
+    <BeneficiariesAdults>0</BeneficiariesAdults>
+    <BeneficiariesTotal>0</BeneficiariesTotal>
+    <projectgrouping/>
+    <ProjectStatus>Funded</ProjectStatus>
+    <ProjectStartDate>2007-01-05T00:00:00</ProjectStartDate>
+    <LetterSentToAgencyDate>2006-12-14T00:00:00</LetterSentToAgencyDate>
+    <DateUSGSignature>2006-12-14T00:00:00</DateUSGSignature>
+    <DisbursementDate>2007-01-05T00:00:00</DisbursementDate>
+    <EmergencyGroupName>Internal strife</EmergencyGroupName>
+    <EmergencyCategoryName>Man-made</EmergencyCategoryName>
+    <RegionName>Western Asia</RegionName>
+    <SubRegionName>Western Asia</SubRegionName>
+    <ContinentName>Asia</ContinentName>
+    <ProjectTypeID>1</ProjectTypeID>
+    <ProjectTypeName>HRP</ProjectTypeName>
+    <projectcapcode/>
+    <CERFGenderMarkerID>0</CERFGenderMarkerID>
+    <CERFGenderMarkerName/>
+  </project>
+</ArrayOfProject>

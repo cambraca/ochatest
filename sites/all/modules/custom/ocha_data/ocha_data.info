@@ -1,0 +1,4 @@
+name = Data sources
+description = Loads data from the web and stores as files that expire after a certain amount of time.
+package = OCHA
+core = 7.x

@@ -1,0 +1,92 @@
+<?php
+
+module_load_include('inc', 'ocha_data', 'display');
+
+const OCHA_DATASET_ALL_PROJECTS = 'all_projects';
+const OCHA_DATASET_KEY_FIGURES = 'key_figures';
+
+/**
+ * Defines which datasets we manage. Supported formats: xml, csv.
+ *
+ * @return array
+ */
+function _ocha_datasets() {
+  return [
+    OCHA_DATASET_ALL_PROJECTS => [
+      'url' => 'https://stg-cerfgms-webapi.unocha.org/v1/project/All.xml',
+      'name' => 'all_projects.xml',
+      'format' => 'xml',
+    ],
+    OCHA_DATASET_KEY_FIGURES => [
+      'url' => 'https://stg-cerfgms-webapi.unocha.org/v1/KeyFigures/All.xml',
+      'name' => 'key_figures.xml',
+      'format' => 'xml',
+    ],
+  ];
+}
+
+/**
+ * @param $which string One of the keys of the array returned by _ocha_datasets().
+ *
+ * @return array
+ * @throws \Exception
+ */
+function ocha_get_data($which) {
+  static $cache = [];
+  if (isset($cache[$which]))
+    return $cache[$which];
+
+  $datasets = _ocha_datasets();
+
+  $filename = cache_get('ocha_filename_'.$which);
+  if (!$filename) {
+    $filename = _ocha_load_from_url($which);
+
+    if ($filename) {
+      // Cache expires after 1 day
+      cache_set('ocha_filename_'.$which, $filename, 'cache', time() + 60*60*24);
+    }
+  } else
+    $filename = $filename->data;
+
+  if (!$filename)
+    throw new Exception('Error loading from data source: '.$which);
+
+  switch ($datasets[$which]['format']) {
+    case 'xml':
+      $xml = simplexml_load_file(drupal_realpath($filename));
+      $cache[$which] = json_decode(json_encode($xml), TRUE);
+      break;
+    default:
+      throw new Exception('Unknown data format: '.$datasets[$which]['format']);
+  }
+
+  return $cache[$which];
+}
+
+/**
+ * Loads the given data set into a local file stored in the public directory.
+ *
+ * @param string $which One of the following: allprojects, TODO?
+ *
+ * @return NULL|string The generated filename (includes date/time)
+ * @throws \Exception
+ */
+function _ocha_load_from_url($which) {
+  $datasets = _ocha_datasets();
+
+  if (!array_key_exists($which, $datasets))
+    throw new Exception('Unknown data source');
+
+  $dir = 'public://data';
+  if (!is_dir($dir))
+    drupal_mkdir($dir);
+
+  $destination = 'public://data/' . date('Y-m-d-H-i-s ') . $datasets[$which]['name'];
+
+  $result = drupal_http_request($datasets[$which]['url'], ['timeout' => 120]);
+  if ($result->code != 200)
+    return NULL;
+
+  return file_unmanaged_save_data($result->data, $destination);
+}
