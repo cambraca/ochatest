@@ -221,6 +221,22 @@ html {
   color: rgba(255, 255, 255, 0.7);
 }
 
+@media screen and (min-width: 60em) {
+  .paragraphs-item-funding-charts .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .paragraphs-item-funding-charts .content > * {
+    width: 100%;
+  }
+  .paragraphs-item-funding-charts .content .by_year_window,
+  .paragraphs-item-funding-charts .content .by_emergency_window,
+  .paragraphs-item-funding-charts .content .by_agency_window,
+  .paragraphs-item-funding-charts .content .by_sector_window {
+    width: 50%;
+  }
+}
+
 html {
   box-sizing: border-box;
 }

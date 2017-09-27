@@ -6,8 +6,9 @@
  * @param array $variables
  * @param string $type
  * @param array $data
+ * @param array|string $extra_classes
  */
-function _ocha_data_include_chart(&$variables, $type, $data) {
+function _ocha_data_include_chart(&$variables, $type, $data, $extra_classes = []) {
   $variables['#attached']['js'][] = [
     'type' => 'external',
     'data' => '//cdn.plot.ly/plotly-1.5.0.min.js',
@@ -20,7 +21,7 @@ function _ocha_data_include_chart(&$variables, $type, $data) {
 
   $variables['chart'] = [
     '#type' => 'container',
-    '#attributes' => ['class' => [$type], 'id' => $html_id],
+    '#attributes' => ['class' => array_merge([$type], (array) $extra_classes), 'id' => $html_id],
   ];
 
   $variables['#attached']['js'][] = [
@@ -45,7 +46,7 @@ function ocha_data_preprocess_entity(&$variables) {
 
   switch ($p->bundle()) {
     case 'kpis':
-      $all = ocha_get_data(OCHA_DATASET_ALL_PROJECTS);
+      $projects = ocha_get_data(OCHA_DATASET_ALL_PROJECTS);
 
       $values = [
         'Allocated' => [
@@ -69,7 +70,7 @@ function ocha_data_preprocess_entity(&$variables) {
         ],
       ];
 
-      foreach ($all['project'] as $project) {
+      foreach ($projects as $project) {
         $amount = floatval($project['TotalAmountApproved']);
 
         $values['Allocated']['value'] += $amount;
@@ -96,10 +97,10 @@ function ocha_data_preprocess_entity(&$variables) {
       break;
 
     case 'cerf_map':
-      $all = ocha_get_data(OCHA_DATASET_ALL_PROJECTS);
+      $projects = ocha_get_data(OCHA_DATASET_ALL_PROJECTS);
 
       $data = [];
-      foreach ($all['project'] as $project) {
+      foreach ($projects as $project) {
         if (!array_key_exists($project['CountryCode'], $data))
           $data[$project['CountryCode']] = [
             'label' => $project['CountryName'],
@@ -127,7 +128,8 @@ function ocha_data_preprocess_entity(&$variables) {
     case 'funding_charts':
       $variables['content']['field_funding_charts']['#access'] = FALSE;
 
-      $all = ocha_get_data(OCHA_DATASET_ALL_PROJECTS);
+      $projects = ocha_get_data(OCHA_DATASET_ALL_PROJECTS);
+      $agencies = ocha_get_data(OCHA_DATASET_ALL_AGENCIES);
 
       $data = [
         'by_year_window' => [],
@@ -136,16 +138,16 @@ function ocha_data_preprocess_entity(&$variables) {
         'by_sector_window' => [],
         'by_country_year' => [],
       ];
-      foreach ($all['project'] as $project) {
+      foreach ($projects as $project) {
         if (!floatval($project['TotalAmountApproved']))
           continue;
 
 
         _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_year_window', $project['Year'], $project['WindowFullName']);
 
-        _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_emergency_window', $project['EmergencyTypeName'], $project['WindowFullName']);
+        _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_emergency_window', $project['EmergencyGroupName'], $project['WindowFullName']);
 
-        _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_agency_window', $project['AgencyName'], $project['WindowFullName']);
+        _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_agency_window', $agencies[$project['AgencyID']]['AgencyShortName'], $project['WindowFullName']);
 
         foreach ($project['projectsectors'] as $projectsector) {
           if (!array_key_exists('SectorAmount', $projectsector))
@@ -204,7 +206,7 @@ function ocha_data_preprocess_entity(&$variables) {
         $processed_data['sets'] = array_values($processed_data['sets']);
 
         $variables['content'][$key] = [];
-        _ocha_data_include_chart($variables['content'][$key], 'ocha_stackedbar', $processed_data);
+        _ocha_data_include_chart($variables['content'][$key], 'ocha_stackedbar', $processed_data, $key);
       }
 
       break;

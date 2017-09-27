@@ -1,8 +1,10 @@
 <?php
 
 module_load_include('inc', 'ocha_data', 'display');
+module_load_include('inc', 'ocha_data', 'process');
 
 const OCHA_DATASET_ALL_PROJECTS = 'all_projects';
+const OCHA_DATASET_ALL_AGENCIES = 'all_agencies';
 const OCHA_DATASET_KEY_FIGURES = 'key_figures';
 
 /**
@@ -16,6 +18,15 @@ function _ocha_datasets() {
       'url' => 'https://stg-cerfgms-webapi.unocha.org/v1/project/All.xml',
       'name' => 'all_projects.xml',
       'format' => 'xml',
+      'process' => '_ocha_data_process_xml_table',
+      'process_args' => ['project', 'ProjectID'],
+    ],
+    OCHA_DATASET_ALL_AGENCIES => [
+      'url' => 'https://stg-cerfgms-webapi.unocha.org/v1/agency/All.xml',
+      'name' => 'all_agencies.xml',
+      'format' => 'xml',
+      'process' => '_ocha_data_process_xml_table',
+      'process_args' => ['agency', 'AgencyID'],
     ],
     OCHA_DATASET_KEY_FIGURES => [
       'url' => 'https://stg-cerfgms-webapi.unocha.org/v1/KeyFigures/All.xml',
@@ -37,14 +48,15 @@ function ocha_get_data($which) {
     return $cache[$which];
 
   $datasets = _ocha_datasets();
+  $dataset = $datasets[$which];
 
   $filename = cache_get('ocha_filename_'.$which);
   if (!$filename) {
     $filename = _ocha_load_from_url($which);
 
     if ($filename) {
-      // Cache expires after 1 day
-      cache_set('ocha_filename_'.$which, $filename, 'cache', time() + 60*60*24);
+      // Cache expires after 7 days
+      cache_set('ocha_filename_'.$which, $filename, 'cache', time() + 60*60*24*7);
     }
   } else
     $filename = $filename->data;
@@ -52,15 +64,24 @@ function ocha_get_data($which) {
   if (!$filename)
     throw new Exception('Error loading from data source: '.$which);
 
-  switch ($datasets[$which]['format']) {
+  switch ($dataset['format']) {
     case 'xml':
       $xml = simplexml_load_file(drupal_realpath($filename));
-      $cache[$which] = json_decode(json_encode($xml), TRUE);
+      $data = json_decode(json_encode($xml), TRUE);
       break;
     default:
-      throw new Exception('Unknown data format: '.$datasets[$which]['format']);
+      throw new Exception('Unknown data format: '. $dataset['format']);
   }
 
+  // Run custom processing on the raw data received
+  if (array_key_exists('process', $dataset)) {
+    $args = [$data];
+    if (array_key_exists('process_args', $dataset))
+      $args = array_merge($args, $dataset['process_args']);
+    $data = call_user_func_array($dataset['process'], $args);
+  }
+
+  $cache[$which] = $data;
   return $cache[$which];
 }
 
