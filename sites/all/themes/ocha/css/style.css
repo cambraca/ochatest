@@ -221,6 +221,9 @@ html {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.paragraphs-item-funding-charts {
+  padding: 50px 0;
+}
 @media screen and (min-width: 60em) {
   .paragraphs-item-funding-charts .content {
     display: flex;
@@ -235,6 +238,35 @@ html {
   .paragraphs-item-funding-charts .content .by_sector_window {
     width: 50%;
   }
+}
+
+.paragraphs-item-reliefweb-maps {
+  background: #e8e8e8;
+  padding: 10px 0;
+  text-align: center;
+}
+.paragraphs-item-reliefweb-maps h4 {
+  color: #999999;
+}
+.paragraphs-item-reliefweb-maps img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+.paragraphs-item-reliefweb-maps .content > * {
+  margin: 40px 20px;
+}
+@media screen and (min-width: 60em) {
+  .paragraphs-item-reliefweb-maps .content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.paragraphs-item-cerf-map {
+  padding: 50px 0;
 }
 
 html {

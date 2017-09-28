@@ -29,6 +29,11 @@ function ocha_config_paragraphs_info() {
       'bundle' => 'kpis',
       'locked' => '1',
     ),
+    'reliefweb_maps' => array(
+      'name' => 'ReliefWeb Maps',
+      'bundle' => 'reliefweb_maps',
+      'locked' => '1',
+    ),
   );
   return $items;
 }

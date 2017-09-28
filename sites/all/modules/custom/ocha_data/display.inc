@@ -147,7 +147,10 @@ function ocha_data_preprocess_entity(&$variables) {
 
         _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_emergency_window', $project['EmergencyGroupName'], $project['WindowFullName']);
 
-        _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_agency_window', $agencies[$project['AgencyID']]['AgencyShortName'], $project['WindowFullName']);
+        $agency_short_name = array_key_exists($project['AgencyID'], $agencies)
+          ? $agencies[$project['AgencyID']]['AgencyShortName']
+          : '(none)';
+        _ocha_data_deep_array_add(floatval($project['TotalAmountApproved']), $data, 'by_agency_window', $agency_short_name, $project['WindowFullName']);
 
         foreach ($project['projectsectors'] as $projectsector) {
           if (!array_key_exists('SectorAmount', $projectsector))
@@ -207,6 +210,48 @@ function ocha_data_preprocess_entity(&$variables) {
 
         $variables['content'][$key] = [];
         _ocha_data_include_chart($variables['content'][$key], 'ocha_stackedbar', $processed_data, $key);
+      }
+
+      break;
+
+    case 'reliefweb_maps':
+      $variables['content']['field_count']['#access'] = FALSE;
+
+      $count = 0;
+      $max = intval($variables['content']['field_count']['#items'][0]['value']);
+
+      foreach (ocha_get_data(OCHA_DATASET_RELIEFWEB_MAPS) as $map) {
+        if (++$count > $max)
+          break;
+        $thumb = $map['fields']['file'][0]['preview']['url-large'];
+        $title = $map['fields']['title'];
+        $type = $map['fields']['ocha_product'][0]['name'];
+        $url = $map['fields']['url_alias'];
+
+        $thumb_render = [
+          '#theme' => 'image',
+          '#path' => $thumb,
+          '#alt' => $title,
+          '#title' => $title,
+        ];
+
+        $variables['content'][] = [
+          '#type' => 'container',
+          'type' => [
+            '#type' => 'html_tag',
+            '#tag' => 'h4',
+            '#value' => $type,
+          ],
+          'link' => [
+            '#theme' => 'link',
+            '#text' => drupal_render($thumb_render),
+            '#path' => $url,
+            '#options' => [
+              'attributes' => ['target' => '_blank'],
+              'html' => TRUE,
+            ],
+          ],
+        ];
       }
 
       break;
